@@ -62,7 +62,7 @@
 //     e.preventDefault();
 //     console.log(formData);
 //     try {
-//         const response = await axios.post("http://localhost:5000/foodselection/admin/createmenu", formData);
+//         const response = await axios.post("https://24c5-49-249-163-201.ngrok-free.app/foodselection/admin/createmenu", formData);
 //         console.log("Response from API:", response.data);
 //       } catch (error) {
 //         console.error("Error while sending data to API:", error);
@@ -190,7 +190,7 @@ function MenuForm() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/foodselection/admin/createmenu",
+        "https://24c5-49-249-163-201.ngrok-free.app/foodselection/admin/createmenu",
         {
           month: formData.month,
           week: formData.week,

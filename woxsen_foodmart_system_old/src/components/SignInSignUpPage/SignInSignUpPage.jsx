@@ -26,7 +26,7 @@ const SignInSignUpPage = ({ onLoginSuccess }) => {
     try {
        //Need to update with NEW DB 
           if(email=='rizwan.zhad@woxsen.edu.in' && password=='123456'){
-            const response = await axios.post("http://localhost:5000/api/login", {
+            const response = await axios.post("https://24c5-49-249-163-201.ngrok-free.app/api/login", {
               email,
               password,
             });
@@ -42,7 +42,7 @@ const SignInSignUpPage = ({ onLoginSuccess }) => {
             // onLoginSuccess();
           }
       else{
-      const response = await axios.post("http://localhost:5000/api/login", {
+      const response = await axios.post("https://24c5-49-249-163-201.ngrok-free.app/api/login", {
         email,
         password,
       });
@@ -69,7 +69,7 @@ const SignInSignUpPage = ({ onLoginSuccess }) => {
     //   return;
     // }
     try {
-      const response = await axios.post("http://localhost:5000/api/signup", {
+      const response = await axios.post("https://24c5-49-249-163-201.ngrok-free.app/api/signup", {
         name,
         email,
         password,
@@ -86,7 +86,7 @@ const SignInSignUpPage = ({ onLoginSuccess }) => {
   const handleOTPValidation = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/otp/validate",
+        "https://24c5-49-249-163-201.ngrok-free.app/api/otp/validate",
         {
           email,
           otp,

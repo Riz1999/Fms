@@ -27,7 +27,7 @@ const FoodSelectionDisplay = ({fetchData}) => {
     
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/foodselection/userSelectedFood/${userId}/${selectedMonth}/${selectedWeek}`)
+    axios.get(`https://24c5-49-249-163-201.ngrok-free.app/foodselection/userSelectedFood/${userId}/${selectedMonth}/${selectedWeek}`)
       .then((response) => {
         setSelectedFood(response.data);
         console.log("response.data:  ",response.data)

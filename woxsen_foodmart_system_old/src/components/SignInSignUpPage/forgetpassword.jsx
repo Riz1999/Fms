@@ -14,7 +14,7 @@ const ForgetPassword = ()=>{
 
 
     const EmailVarify = async () => {
-        const response = await axios.post("http://localhost:5000/api/EmailVarify",
+        const response = await axios.post("https://24c5-49-249-163-201.ngrok-free.app/api/EmailVarify",
         {
             email,
         });
@@ -31,7 +31,7 @@ const ForgetPassword = ()=>{
     const handleOTPValidation = async () => {
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/forgetPassword",
+                "https://24c5-49-249-163-201.ngrok-free.app/api/forgetPassword",
                 {
                 email,
                 otp,

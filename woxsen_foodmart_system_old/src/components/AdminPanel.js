@@ -11,7 +11,7 @@ const AdminPanel = () => {
 
   const fetchFoods = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/foods");
+      const response = await axios.get("https://24c5-49-249-163-201.ngrok-free.app/api/foods");
       setFoods(response.data);
     } catch (error) {
       console.error("Error fetching foods:", error);
@@ -24,7 +24,7 @@ const AdminPanel = () => {
 
   const handleAddFood = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/foods", newFood);
+      const response = await axios.post("https://24c5-49-249-163-201.ngrok-free.app/api/foods", newFood);
       console.log("Food added successfully:", response.data);
       setNewFood({
         name: "",
@@ -39,7 +39,7 @@ const AdminPanel = () => {
 
   const handleDeleteFood = async (foodId) => {
     try {
-      const response = await axios.delete(`http://localhost:5000/api/foods/${foodId}`);
+      const response = await axios.delete(`https://24c5-49-249-163-201.ngrok-free.app/api/foods/${foodId}`);
       console.log("Food deleted successfully:", response.data);
       fetchFoods(); // Refresh the list of foods after deleting one
     } catch (error) {

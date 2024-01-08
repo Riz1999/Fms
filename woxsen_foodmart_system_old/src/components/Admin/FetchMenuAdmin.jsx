@@ -41,7 +41,7 @@ const FetchMenuAdmin = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/foodselection/getmenu?month=${month}&week=${week}&day=${day}`
+        `https://24c5-49-249-163-201.ngrok-free.app/foodselection/getmenu?month=${month}&week=${week}&day=${day}`
       );
       setMenu(response.data);
     } catch (error) {
@@ -60,7 +60,7 @@ const FetchMenuAdmin = () => {
     try {
       let dayOfTheWeek = day.toLocaleLowerCase();
       const response = await axios.put(
-        `http://localhost:5000/foodselection/update-breakfast?month=${month}&week=${week}&day=${dayOfTheWeek}`,
+        `https://24c5-49-249-163-201.ngrok-free.app/foodselection/update-breakfast?month=${month}&week=${week}&day=${dayOfTheWeek}`,
         {
           breakfast: [newBreakfastItem],
         }
@@ -78,7 +78,7 @@ const FetchMenuAdmin = () => {
     try {
       let dayOfTheWeek = day.toLocaleLowerCase();
       const response = await axios.put(
-        `http://localhost:5000/foodselection/update-lunch?month=${month}&week=${week}&day=${dayOfTheWeek}`,
+        `https://24c5-49-249-163-201.ngrok-free.app/foodselection/update-lunch?month=${month}&week=${week}&day=${dayOfTheWeek}`,
         {
           lunch: [newLunchItem],
         }
@@ -96,7 +96,7 @@ const FetchMenuAdmin = () => {
     try {
       let dayOfTheWeek = day.toLocaleLowerCase();
       const response = await axios.put(
-        `http://localhost:5000/foodselection/update-dinner?month=${month}&week=${week}&day=${dayOfTheWeek}`,
+        `https://24c5-49-249-163-201.ngrok-free.app/foodselection/update-dinner?month=${month}&week=${week}&day=${dayOfTheWeek}`,
         {
           dinner: [newDinnerItem],
         }
@@ -120,7 +120,7 @@ const FetchMenuAdmin = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:5000/foodselection/delete-breakfast?month=${month}&week=${week}&day=${dayOfTheWeek}`,
+        `https://24c5-49-249-163-201.ngrok-free.app/foodselection/delete-breakfast?month=${month}&week=${week}&day=${dayOfTheWeek}`,
         {
           deleteBreakfast: [itemName],
         }
@@ -143,7 +143,7 @@ const FetchMenuAdmin = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:5000/foodselection/delete-lunch?month=${month}&week=${week}&day=${dayOfTheWeek}`,
+        `https://24c5-49-249-163-201.ngrok-free.app/foodselection/delete-lunch?month=${month}&week=${week}&day=${dayOfTheWeek}`,
         {
           deleteLunch: [itemName],
         }
@@ -166,7 +166,7 @@ const FetchMenuAdmin = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:5000/foodselection/delete-dinner?month=${month}&week=${week}&day=${dayOfTheWeek}`,
+        `https://24c5-49-249-163-201.ngrok-free.app/foodselection/delete-dinner?month=${month}&week=${week}&day=${dayOfTheWeek}`,
         {
           deleteDinner: [itemName],
         }

@@ -145,7 +145,7 @@ const FoodComponent = ({setFetchData}) => {
       console.log(data);
 
       const response = await axios.post(
-        "http://localhost:5000/foodselection/store/usermenu",
+        "https://24c5-49-249-163-201.ngrok-free.app/foodselection/store/usermenu",
         data
       );
       // consle.log(response)
@@ -495,7 +495,7 @@ const FoodComponent = ({setFetchData}) => {
     console.log(`Month name: ${month} week number: ${weekNumber} and day is: ${selectedDay}`)
   
     axios
-    .get(`http://localhost:5000/foodselection/user/getmenu?month=${month}&week=${weekNumber}`)
+    .get(`https://24c5-49-249-163-201.ngrok-free.app/foodselection/user/getmenu?month=${month}&week=${weekNumber}`)
       .then((response) => {
         // Handle the response from the API call
         console.log('Response from DB: ',response.data);
@@ -545,7 +545,7 @@ const [selectedDayFood,setSelectedDayFood] = useState({})
     
     // Get the week number based on the current date
     const selectedWeek = calculateWeekNumber(date);
-    axios.get(`http://localhost:5000/foodselection/userSelectedFood/${userId}/${selectedMonth}/${selectedWeek}`)
+    axios.get(`https://24c5-49-249-163-201.ngrok-free.app/foodselection/userSelectedFood/${userId}/${selectedMonth}/${selectedWeek}`)
       .then((response) => {
         console.log("Selected Menu: ",response.data)
         console.log("Monday Menu: ",response.data?.monday)

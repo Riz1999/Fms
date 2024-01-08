@@ -13,7 +13,7 @@ const AdminPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/foodselection/getFamusItemsObj`)
+      .get(`https://24c5-49-249-163-201.ngrok-free.app/foodselection/getFamusItemsObj`)
       .then((response) => {
         // debugger;
         // Handle the response from the API call
