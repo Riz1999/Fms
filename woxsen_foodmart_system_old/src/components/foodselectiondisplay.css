@@ -1,0 +1,95 @@
+/* FoodSelectionDisplay.css */
+
+/* Base Styles */
+.food-selection {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.food-selection h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.food-table-container {
+  overflow-x: auto;
+}
+
+.food-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Table background color */
+}
+
+.food-table th,
+.food-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.food-table th {
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+}
+
+.food-table td {
+  background-color: #fff;
+  font-size: 16px; /* Font size for table data */
+  color: #555;
+}
+
+.food-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.food-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Style each food item */
+.food-item td {
+  font-size: 18px;
+  color: #555;
+  padding: 10px; /* Add consistent spacing for all meal types */
+}
+
+/* Add spacing between days */
+.food-item + .food-item {
+  margin-top: 20px;
+}
+
+/* Media Query for Tablets (up to 768px) */
+@media (max-width: 768px) {
+  .food-table th {
+    font-size: 14px;
+  }
+
+  .food-table td {
+    font-size: 14px;
+  }
+
+  .food-item td {
+    font-size: 16px;
+  }
+}
+
+/* Media Query for Mobile Phones (up to 480px) */
+@media (max-width: 480px) {
+  .food-table th {
+    font-size: 12px;
+  }
+
+  .food-table td {
+    font-size: 12px;
+  }
+
+  .food-selection h2 {
+    font-size: 20px;
+  }
+}

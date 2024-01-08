@@ -1,0 +1,138 @@
+/* FetchMenuAdmin.css */
+.menu-selector {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-selector-h2 {
+  text-align: center;
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.menu-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 80%;
+}
+
+label,
+.admin-select {
+  font-size: 18px;
+  margin: 10px 0;
+  display: block;
+}
+
+.admin-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.menu-preview {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.meal-section {
+  margin: 20px 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.strong {
+  font-weight: bold;
+  font-size: 18px;
+}
+.del-din {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+.del {
+  display: flex;
+  justify-content: space-between;
+  padding: auto;
+  margin-bottom: 20px;
+}
+.btn-del {
+  background: #880016;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+  font-size: 18px;
+  width: 40%;
+}
+.btn {
+  background: linear-gradient(135deg, #880016, #ffc7a0);
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+  font-size: 18px;
+  width: 50%;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #57000d, #ffab71);
+  transform: scale(1.05);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.p {
+  color: #999;
+}
+
+/* Custom scrollbar style */
+.menu-selector {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.menu-selector::-webkit-scrollbar {
+  width: 8px;
+}
+
+.menu-selector::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.menu-selector::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}

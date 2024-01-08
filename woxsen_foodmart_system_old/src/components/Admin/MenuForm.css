@@ -1,0 +1,156 @@
+/* MenuForm.css */
+
+/* Background Gradient */
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: var(--color-creamson);
+}
+
+/* Form Styling */
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styling */
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left; /* Align labels to the left */
+}
+
+/* Select Styling */
+.select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Button Styling with Shadows and Gradient */
+.btn {
+  background: linear-gradient(
+    135deg,
+    #880016,
+    #ffc7a0
+  ); /* Maroon and Peach Gradient */
+  color: #fff;
+  padding: 15px 30px; /* Larger buttons */
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px; /* Increased margin-top */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+  font-size: 18px; /* Larger font size */
+  width: 50%; /* Equal width for buttons */
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #57000d, #ffab71); /* Hover gradient */
+  transform: scale(1.05);
+}
+
+/* Input Styling */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the form */
+form {
+  animation: fadeIn 0.5s;
+}
+
+/* Additional Styling for Headers */
+h3 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #444;
+}
+
+/* Style the form header */
+form h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Style the success message */
+.success-message {
+  color: #009900;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Add some margin to the labels */
+label {
+  margin-bottom: 8px;
+}
+
+/* Style the form label for selects */
+form label {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Style the error message */
+.error-message {
+  color: #ff0000;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.btn-sub {
+  display: flex;
+  background: #880016;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+  font-size: 18px;
+}
